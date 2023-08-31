@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+android:layout_marginTop="20dp"
+android:id="@+id/tv_new_location"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textSize="25sp"
+android:textColor="@color/text"
+android:gravity="center"
+android:text="Edit the location"
+    ></TextView>
+
+<TextView
+android:layout_marginTop="20dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Location name:"
+android:textSize="@dimen/textsize"
+android:textColor="@color/text"
+    >
+
+</TextView>
+
+<EditText
+android:id="@+id/et_edit_locationame"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:hint=""
+    android:lines="1"
+    >
+
+</EditText>
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Location"
+android:textSize="@dimen/textsize"
+android:textColor="@color/text"
+    >
+
+</TextView>
+<EditText
+android:id="@+id/et_edit_location"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+    android:lines="1"
+    >
+</EditText>
+
+    <Button
+        android:id="@+id/bt_edit_location"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="submit"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/bt_remove_location"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="remove the location "
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_start_location"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="set as starting point"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_end_location"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="set as ending point"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

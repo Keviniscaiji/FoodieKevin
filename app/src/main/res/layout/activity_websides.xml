@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebsidesActivity"
+    android:background="@drawable/favoriate_locations_background">
+
+<TextView
+    android:id="@+id/tv_websites"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Common websites"
+    android:textColor="@color/black"
+    android:textSize="30dp"
+    android:gravity="center"
+    ></TextView>
+
+    <ImageButton
+
+        android:id="@+id/wv_websites1"
+        android:layout_below="@id/tv_websites"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/website_bt1" />
+
+    <ImageButton
+        android:id="@+id/wv_websites2"
+        android:layout_below="@id/tv_websites"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/wv_websites1"
+        android:background="@drawable/website_bt2" />
+
+    <ImageButton
+        android:id="@+id/wv_websites3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/wv_websites1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/website_bt3" />
+
+    <ImageButton
+        android:id="@+id/wv_websites4"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/wv_websites1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/wv_websites3"
+        android:background="@drawable/website_bt4" />
+
+    <ImageButton
+        android:id="@+id/wv_websites5"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/wv_websites3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/website_bt5" />
+
+    <ImageButton
+        android:id="@+id/wv_websites6"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/wv_websites3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/wv_websites3"
+        android:background="@drawable/website_bt6" />
+
+</RelativeLayout>

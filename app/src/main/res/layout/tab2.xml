@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/tools_background"
+    >
+
+    <TextView
+        android:id="@+id/tv_change_password_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        ></TextView>
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change my password:"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/et_new_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your new password"
+        android:inputType="textPassword">
+
+    </EditText>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="please enter your password again"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/et_new_password2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your new password"
+        android:inputType="textPassword">
+
+    </EditText>
+    <Button
+        android:id="@+id/bt_new_password"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="submit"
+        ></Button>
+
+
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_new_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="Add a new location"
+        ></TextView>
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location name:"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/et_new_locationame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=""
+        >
+
+    </EditText>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="@dimen/textsize"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+    <EditText
+        android:background="@color/white"
+        android:id="@+id/et_new_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+    </EditText>
+    <Button
+        android:id="@+id/bt_new_location"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/button"
+        android:text="submit"
+        ></Button>
+
+</LinearLayout>

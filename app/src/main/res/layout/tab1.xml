@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_horizontal"
+    android:dividerPadding="5dp"
+    android:showDividers="middle"
+    >
+
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="City"
+        android:text="北京">
+
+    </EditText>
+        <EditText
+            android:layout_toRightOf="@id/et_city"
+            android:id="@+id/et_start_point"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Starting Point"
+            android:text="">
+
+        </EditText>
+
+    <Spinner
+        android:id="@+id/sp_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_city"
+        android:layout_toLeftOf="@id/et_end_point"
+        android:entries="@array/auto" />
+
+    <EditText
+        android:id="@+id/et_end_point"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_start_point"
+        android:layout_toRightOf="@id/et_city"
+        android:layout_weight="1"
+        android:paddingBottom="20dp"
+        android:hint="End Point"
+        android:text="">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="130dp"
+
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_start_point"
+        android:layout_weight="0.3"
+        android:backgroundTint="@color/button"
+        android:text="Search">
+
+    </Button>
+        <Button
+
+            android:layout_below="@id/bt_search"
+            android:layout_toRightOf="@id/et_start_point"
+            android:id="@+id/bt_transform"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Transform"
+            android:layout_weight="0.3"
+            android:backgroundTint="@color/button">
+
+        </Button>
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bt_transform"
+        android:background="#00000000"
+        android:backgroundTint="#00000000"
+        android:clickable="true"></com.baidu.mapapi.map.MapView>
+
+
+    <Button
+        android:id="@+id/bt_save_route"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="370dp"
+        android:background="@drawable/button_5" />
+
+    <Button
+        android:id="@+id/bt_remove_all"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="440dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_3"/>
+
+    <Button
+        android:id="@+id/bt_draw"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="500dp"
+        android:background="@drawable/button_4" />
+
+</RelativeLayout>

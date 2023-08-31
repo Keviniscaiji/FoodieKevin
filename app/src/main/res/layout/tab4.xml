@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_right"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/tools_background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tools"
+        android:textColor="@color/white"
+        android:textSize="@dimen/big_textsize"
+        android:textAlignment="center"
+
+        android:backgroundTint="@color/textview"
+        >
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_tool_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tools_pic1"
+        ></ImageView>
+
+    <ImageView
+
+        android:id="@+id/bt_tool_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tools_pic2"
+        ></ImageView>
+
+    <ImageView
+
+        android:id="@+id/bt_tool_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tools_pic3"
+        ></ImageView>
+
+</LinearLayout>

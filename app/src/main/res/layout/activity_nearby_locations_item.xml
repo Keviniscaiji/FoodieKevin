@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Listviews.NearbyLocationsActivity"
+    android:id="@+id/nearby_item">
+    <TextView
+
+        android:id="@+id/et_nearby_item_location_name_title"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Location"
+        android:background="@drawable/edittext_comment">
+    </TextView>
+    <TextView
+        android:id="@+id/et_nearby_item_rt_title"
+        android:layout_toRightOf="@id/et_nearby_item_location_name_title"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Mark:"
+        android:background="@drawable/edittext_comment">
+    </TextView>
+    <TextView
+        android:layout_below="@id/et_nearby_item_location_name_title"
+        android:id="@+id/et_nearby_item_location_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_comment">
+    </TextView>
+    <TextView
+        android:layout_below="@id/et_nearby_item_rt_title"
+        android:layout_toRightOf="@id/et_nearby_item_location_name"
+        android:id="@+id/et_nearby_item_rate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edittext_comment">
+    </TextView>
+
+</RelativeLayout>

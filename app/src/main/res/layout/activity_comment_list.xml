@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Listviews.CommentListActivity"
+    android:background="@drawable/comment"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="There are no comments on this site yet, you can be the first person to comment on this site!!"
+        android:id="@+id/tv_comment_average_rate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_comment"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        >
+    </TextView>
+    <ListView
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:layout_weight="1"
+        android:id="@+id/lv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>
